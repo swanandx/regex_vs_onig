@@ -1,0 +1,16 @@
+[package]
+name = "regex_vs_onig"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "use_onig"
+path = "src/use_onig.rs"
+
+[[bin]]
+name = "use_regex"
+path = "src/use_regex.rs"
+
+[dependencies]
+onig = { version="6.4", default-features=false }
+regex = "1.6"
